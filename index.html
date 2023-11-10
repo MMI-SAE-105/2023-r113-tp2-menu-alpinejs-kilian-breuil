@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen: false}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test menu</title>
+    <script defer src="https://unpkg.com/alipinejs"></script>
   </head>
   <body>
     <!-- https://emmet.io/ -->
@@ -13,7 +14,7 @@
       <button aria-controls="mainnav">menu</button>
       <h1>Test de menu</h1>
     </header>
-    <nav id="mainnav">
+    <nav id="mainnav" x-show="menuIsOpen">
       <ul>
         <li><a href="#">item 1</a></li>
         <li><a href="#">item 2</a></li>
